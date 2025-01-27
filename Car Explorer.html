@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Explorer [Beta]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+        }
+
+        nav {
+            width: 100%;
+            background-color: #007BFF;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .box {
+            margin-top: 20px;
+            padding: 20px 40px;
+            background-color: #007BFF;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .image-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="home-link">Strona główna</a></li>
+            <li><a href="#" id="photos-link">Zdjęcia</a></li>
+            <li><a href="#">Marki</a></li>
+            <li><a href="#">Typy samochodów</a></li>
+            <li><a href="#">Odkryj</a></li>
+        </ul>
+    </nav>
+
+    <div class="box">
+        <h1>Car Explorer [Beta]</h1>
+    </div>
+
+    <div class="image-section">
+        <img src="b4393df5-726c-453d-840f-c8bf72a54267.webp" alt="Samochód w ruchu">
+    </div>
+
+    <div class="description">
+        Car Explorer to Twoje miejsce do odkrywania fascynującego świata samochodów. Od klasyków po nowoczesne modele - wszystko w jednym miejscu!
+    </div>
+</body>
+</html>
